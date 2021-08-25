@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bish-Bosh</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header class="title">
+        <h1>Bish Bosh 2.0</h1>
+    </header>
+    <section class=" game">
+        <div>
+
+            <p>Bish-Bosh listar tal mellan 1 och det du väljer nedan ().</p>
+            <p>Om talet är jämnt delbart med ditt valda bish-tal () visas 'Bish' istälet för talet.</p>
+            <p>Om talet är jämnt delbart med ditt valda bosh-tal () visas 'Bosh' istälet för talet.</p>
+            <p>Om talet är jämnt delbart med båda dina tal visas 'Bish-Bosh'.</p>
+
+        </div>
+
+        <form action="" id="frm1">
+            Anta nummer<input type="range" id="nummer1" min="0" max="200" step="1" value="47"
+                oninput="this.form.nummer.value=this.value; myFunction2 ()"><output id="nummer">47</output><br>
+            Bish-nummer<input type="range" id="bishNummer1" min="1" max="200" value="3" oninput="this.form.bish.value=this.value ;
+            myFunction2 ()"><output id="bish">3</output><br>
+            Bosh-nummer<input type="range" id="nummerBosh1" min="1" max="200" value="4" oninput="this.form.bosh.value=this.value ;
+            myFunction2 ()"><output id="bosh">4</output><br>
+        </form>
+        <br><br>
+        <p id="demo"></p>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
