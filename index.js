@@ -1,42 +1,54 @@
 
+function emptyString() {
+    var newString = '';
+    document.getElementById("demo").innerHTML = newString;
+}
+
 function getBishBosh() {
 
-    var loopValue = document.getElementById("nummer1").value;
+    var nummerValue = document.getElementById("nummer1").value;
     var nummerBish = document.getElementById("bishNummer1").value;
     var nummerBosh = document.getElementById("nummerBosh1").value;
     var text = '';
 
 
     var i;
-    for (i = 1; i <= loopValue; i++) {
+    for (i = 1; i <= nummerValue; i++) {
 
 
         if (i % nummerBish == 0 && i % nummerBosh == 0) {
 
-            text += "Bisch-Bosch" + ", ";
+            text = "Bisch-Bosch";
+
+
+
 
 
         } else if (i % nummerBish == 0) {
-            text += "Bisch" + ", ";
+            text = "Bisch";
+
 
 
 
         } else if (i % nummerBosh == 0) {
-            text += "Bosch" + ", ";
+            text = "Bosch";
+
 
 
 
         } else {
-            text += i + ", ";
-
-
+            text = i;
 
         }
 
+        var newDiv = document.createElement('div');
+        newDiv.innerHTML = text;
+
+        document.getElementById("demo").appendChild(newDiv);
+
 
     }
-    // document.getElementById("demo").appendChild(newDiv);
-    document.getElementById("demo").innerHTML = text;
+
 
 
 }

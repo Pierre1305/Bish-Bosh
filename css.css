@@ -1,6 +1,10 @@
-body{background-color: lightskyblue;}
+body{background-color: rgb(149, 228, 248);}
 .title{ font-style: italic; text-align: center; margin: 0px; padding: 0px;
 
 }
 .game{ margin: 0px; padding: 0px;}
-.demo{display: inline;}
+#demo{width: 70%; display: flex; flex-wrap: wrap; }
+#demo div{ padding: 10px;background: grey;font-size: 12px; color: white;  margin: 3px;height: 40px;content: Bosh ; }
+@media (min-width: 300px) {
+    #demo div{ width: calc(60px);}
+}

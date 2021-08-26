@@ -24,12 +24,13 @@
         </div>
 
         <form action="" id="frm1">
-            Anta nummer<input type="range" id="nummer1" min="0" max="200" step="1" value="47"
-                oninput="this.form.nummer.value=this.value; getBishBosh (); "><output id="nummer">47</output><br>
-            Bish-nummer<input type="range" id="bishNummer1" min="1" max="200" value="3" oninput="this.form.bish.value=this.value ;
-            getBishBosh ()"><output id="bish">3</output><br>
-            Bosh-nummer<input type="range" id="nummerBosh1" min="1" max="200" value="4" oninput="this.form.bosh.value=this.value ;
-            getBishBosh ()"><output id="bosh">4</output><br>
+            Antal nummer<input type="range" id="nummer1" min="0" max="500" step="1" value="47"
+                oninput="this.form.nummer.value=this.value; emptyString(); getBishBosh (); "><output
+                id="nummer">47</output><br>
+            Bish-nummer<input type="range" id="bishNummer1" min="1" max="500" value="3" oninput="this.form.bish.value=this.value ;
+            emptyString();getBishBosh ()"><output id="bish">3</output><br>
+            Bosh-nummer<input type="range" id="nummerBosh1" min="1" max="500" value="4" oninput="this.form.bosh.value=this.value ;
+            emptyString();getBishBosh ()"><output id="bosh">4</output><br>
         </form>
         <br><br>
         <div id="demo"></div>
